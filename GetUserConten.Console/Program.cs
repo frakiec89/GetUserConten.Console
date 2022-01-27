@@ -8,7 +8,7 @@ namespace GetUserConten.ConsoleView
     {
         static void Main(string[] args)
         {
-            IUserController user = GetUserController(TypeContent.TXTContent); //зависимость
+            IUserController user = GetUserController(TypeContent.RandomUSer); //зависимость core 
 
             foreach (var item in  user.GetUsers())
             {
@@ -22,21 +22,30 @@ namespace GetUserConten.ConsoleView
             {
                 case TypeContent.TXTContent: return GetTXT(); break;
                 case TypeContent.JSONContent: return  GetJson(); break;
+                case TypeContent.RandomUSer: return GEtRandom(); break;
                 default: throw new Exception("неизвестный тип данных");
             }
 
 
         }
 
+        private static IUserController GEtRandom()
+        {
+            return new UserControllerRandom(); // BL
+        }
+
         private static IUserController GetJson()
         {
-            return new UserControllerJSON();
+            return new UserControllerJSON(); // BL
         }
 
         private static IUserController GetTXT()
         {
-            return new UserControllerTXT();
+            return new UserControllerTXT(); // BL
         }
+
+
+
     }
 
 

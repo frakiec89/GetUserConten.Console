@@ -8,6 +8,6 @@ namespace GetUserConten.Core
 {
     public enum TypeContent
     {
-        TXTContent , JSONContent
+        TXTContent , JSONContent  , RandomUSer
     }
 }
