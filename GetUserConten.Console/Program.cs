@@ -1,4 +1,5 @@
 ﻿using System;
+using GetUserConten.BL;
 using GetUserConten.Core;
 
 namespace GetUserConten.ConsoleView
@@ -7,11 +8,11 @@ namespace GetUserConten.ConsoleView
     {
         static void Main(string[] args)
         {
-            IUserController user = GetUserController(TypeContent.JSONContent); //зависимость
+            IUserController user = GetUserController(TypeContent.TXTContent); //зависимость
 
             foreach (var item in  user.GetUsers())
             {
-                Console.WriteLine($"имя {item.name} фамилия{item.fersName} группа{item.group}");
+                Console.WriteLine($"имя {item.name} фамилия {item.fersName} группа {item.group}");
             }
         }
 
@@ -29,12 +30,12 @@ namespace GetUserConten.ConsoleView
 
         private static IUserController GetJson()
         {
-            throw new NotImplementedException();
+            return new UserControllerJSON();
         }
 
         private static IUserController GetTXT()
         {
-            throw new NotImplementedException();
+            return new UserControllerTXT();
         }
     }
 

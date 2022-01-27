@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetUserConten.Console", "Ge
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetUserConten.Core", "GetUserConten.Core\GetUserConten.Core.csproj", "{446E0618-9699-47AC-A612-6A908435AD15}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetUserConten.BL", "GetUserConten.BL\GetUserConten.BL.csproj", "{C54C21B2-BCC3-484A-8355-87BF51B70433}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{446E0618-9699-47AC-A612-6A908435AD15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{446E0618-9699-47AC-A612-6A908435AD15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{446E0618-9699-47AC-A612-6A908435AD15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C54C21B2-BCC3-484A-8355-87BF51B70433}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C54C21B2-BCC3-484A-8355-87BF51B70433}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C54C21B2-BCC3-484A-8355-87BF51B70433}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C54C21B2-BCC3-484A-8355-87BF51B70433}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
